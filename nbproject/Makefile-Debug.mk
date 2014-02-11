@@ -35,6 +35,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/abstractdatabase.o \
+	${OBJECTDIR}/abstractsort.o \
 	${OBJECTDIR}/employee.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/student.o
@@ -63,6 +65,16 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cse335project2: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cse335project2 ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/abstractdatabase.o: abstractdatabase.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/abstractdatabase.o abstractdatabase.cpp
+
+${OBJECTDIR}/abstractsort.o: abstractsort.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/abstractsort.o abstractsort.cpp
 
 ${OBJECTDIR}/employee.o: employee.cpp 
 	${MKDIR} -p ${OBJECTDIR}

@@ -1,10 +1,3 @@
-/* 
- * File:   employee.h
- * Author: njd
- *
- * Created on February 11, 2014, 12:05 PM
- */
-
 #ifndef EMPLOYEE_H
 #define	EMPLOYEE_H
 
@@ -80,6 +73,7 @@ public:
      print data stored in Staff
      */
     virtual void print();
+    friend EmployeeDatabase::compare();
     
 private:
     string m_dep;

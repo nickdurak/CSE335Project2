@@ -12,6 +12,10 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>abstractdatabase.cpp</itemPath>
+      <itemPath>abstractdatabase.h</itemPath>
+      <itemPath>abstractsort.cpp</itemPath>
+      <itemPath>abstractsort.h</itemPath>
       <itemPath>employee.cpp</itemPath>
       <itemPath>employee.h</itemPath>
       <itemPath>main.cpp</itemPath>
@@ -40,6 +44,14 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="abstractdatabase.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="abstractdatabase.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="abstractsort.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="abstractsort.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="employee.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="employee.h" ex="false" tool="3" flavor2="0">
@@ -71,6 +83,14 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="abstractdatabase.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="abstractdatabase.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="abstractsort.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="abstractsort.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="employee.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="employee.h" ex="false" tool="3" flavor2="0">

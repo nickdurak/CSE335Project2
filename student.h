@@ -38,6 +38,10 @@ public:
         print data stored in student
      */
     virtual void print();
+    Student(const Student &stu);
+    
+    friend StudentDatabase::compare();
+    
     
 protected:
     
