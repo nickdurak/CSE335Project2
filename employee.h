@@ -4,7 +4,8 @@
 #include <iostream>
 #include <string>
 
-using std::string;
+
+using namespace std;
 
 /**
  Employee
@@ -23,6 +24,9 @@ public:
      print data stored in Employee
      */
     virtual void print();
+    
+    int getSalary();
+    int getYear();
     
 protected:
     
@@ -73,7 +77,7 @@ public:
      print data stored in Staff
      */
     virtual void print();
-    friend EmployeeDatabase::compare();
+
     
 private:
     string m_dep;

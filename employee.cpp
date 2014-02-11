@@ -39,6 +39,17 @@ void Employee::print()
     cout << m_id << " " << m_name << " " << m_salary << " " << m_year;
 }
 
+int Employee::getSalary()
+{
+    return m_salary;
+}
+
+int Employee::getYear()
+{
+    return m_year;
+}
+
+
 
 /**
  constructor for Faculty

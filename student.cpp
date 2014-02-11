@@ -40,6 +40,16 @@ void Student::print()
     cout << std::setprecision(3) << m_id << " " << m_name << " " << m_year << " " << m_grade;
 }
 
+int Student::getGrade()
+{
+    return m_grade;
+}
+
+string Student::getName()
+{
+    return m_name;
+}
+
 
 /**
     constructor for UndergradStudent

@@ -19,6 +19,8 @@
 
 #include<iostream>
 #include<vector>
+
+
 using namespace std;
 
 /**
@@ -38,9 +40,9 @@ public:
         print data stored in student
      */
     virtual void print();
-    Student(const Student &stu);
     
-    friend StudentDatabase::compare();
+    int getGrade();
+    string getName();
     
     
 protected:

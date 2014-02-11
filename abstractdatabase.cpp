@@ -78,11 +78,11 @@ void StudentDatabase::swap(int i, int j)
 
 bool StudentDatabase::compare(int j, int i)
 {
-    if(students[i]->m_grade < students[j]->m_grade) return true;
+    if(students[i]->getGrade() < students[j]->getGrade()) return true;
     
-    else if(students[i]->m_grade == students[j]->m_grade)
+    else if(students[i]->getGrade() == students[j]->getGrade())
     {
-        if(students[i]->m_name > students[j]->m_name) return true;
+        if(students[i]->getName() > students[j]->getName()) return true;
     }
     else return false;
         
@@ -157,13 +157,13 @@ int EmployeeDatabase::getSize()
     return employees.size();
 }
 
-void EmployeeDatabase::compare(int j, int i)
+bool EmployeeDatabase::compare(int j, int i)
 {
-    if(employees[i]->m_salary > employees[j]->m_salary) return true;
+    if(employees[i]->getSalary() > employees[j]->getSalary()) return true;
     
-    else if(employees[i]->m_salary == employees[j]->m_salary)
+    else if(employees[i]->getSalary() == employees[j]->getSalary())
     {
-        if(employees[i]->m_year > employees[j]->m_year) return true;
+        if(employees[i]->getYear() > employees[j]->getYear()) return true;
     }
     else return false;
 }

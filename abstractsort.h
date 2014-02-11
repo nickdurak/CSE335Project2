@@ -10,6 +10,8 @@
 
 #include "abstractdatabase.h"
 
+using namespace std;
+
 class AbstractSort {
 public:
     virtual void sort(AbstractDatabase*) = 0;
@@ -23,7 +25,7 @@ class BubbleSort : public AbstractSort
 public:
     virtual void sort(AbstractDatabase*);
     BubbleSort();
-}
+};
 
 #endif	/* ABSTRACTSORT_H */
 
