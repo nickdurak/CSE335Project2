@@ -83,8 +83,9 @@ bool StudentDatabase::compare(int j, int i)
     else if(students[i]->getGrade() == students[j]->getGrade())
     {
         if(students[i]->getName() > students[j]->getName()) return true;
+        return false;
     }
-    else return false;
+    return false;
         
 }
 
@@ -178,8 +179,9 @@ bool EmployeeDatabase::compare(int j, int i)
     else if(employees[i]->getSalary() == employees[j]->getSalary())
     {
         if(employees[i]->getYear() > employees[j]->getYear()) return true;
+        return false;
     }
-    else return false;
+    return false;
 }
 
 void EmployeeDatabase::sort(AbstractSort *sortType)

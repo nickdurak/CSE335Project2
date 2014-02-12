@@ -25,7 +25,7 @@ public:
     virtual void sort(AbstractSort*) = 0;
     virtual void print() = 0;
     virtual int getSize() = 0;
-    AbstractDatabase();
+    AbstractDatabase() {}
     virtual ~AbstractDatabase() = 0;
     
 };
@@ -40,7 +40,7 @@ public:
     virtual bool compare(int,int);
     virtual void sort(AbstractSort*);
     virtual void print(); 
-    StudentDatabase();
+    StudentDatabase() {}
     virtual ~StudentDatabase();
     
 private:
@@ -57,7 +57,7 @@ public:
     virtual bool compare(int,int);
     virtual void sort(AbstractSort*);
     virtual void print(); 
-    EmployeeDatabase();
+    EmployeeDatabase() {}
     virtual ~EmployeeDatabase();
     
 private:

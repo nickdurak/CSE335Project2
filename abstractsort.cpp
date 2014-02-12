@@ -17,3 +17,7 @@ void BubbleSort::sort(AbstractDatabase* database)
             if(database->compare(j, i)) database->swap(j, i);
 }
 
+BubbleSort::~BubbleSort()
+{
+    delete this;
+}
