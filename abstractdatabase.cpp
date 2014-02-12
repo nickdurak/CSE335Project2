@@ -102,7 +102,9 @@ void StudentDatabase::print()
 
 StudentDatabase::~StudentDatabase()
 {
-    for(unsigned int i = 0; i < students.size(); i++)
+    int size = students.size();
+    
+    for(unsigned int i = 0; i < size; i++)
     {
          students.pop_back;	
     }
@@ -193,7 +195,9 @@ void EmployeeDatabase::print()
 
 EmployeeDatabase::~EmployeeDatabase()
 {
-    for(unsigned int i = 0; i < employees.size(); i++)
+    int size = employees.size();
+    
+    for(unsigned int i = 0; i < size; i++)
     {
          employees.pop_back;	
     }
