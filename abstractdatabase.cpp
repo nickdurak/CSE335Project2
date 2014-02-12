@@ -18,6 +18,13 @@
 
 using namespace std;
 
+
+AbstractDatabase::~AbstractDatabase()
+{
+    delete this;
+}
+
+
 void StudentDatabase::buildDatabase(string file)
 {
     string line = "";
@@ -111,6 +118,8 @@ StudentDatabase::~StudentDatabase()
          students.pop_back();
          delete tmp;
     }
+    
+    delete this;
 }
 
 
@@ -207,4 +216,6 @@ EmployeeDatabase::~EmployeeDatabase()
         employees.pop_back();
         delete tmp;
     }
+    
+    delete this;
 }

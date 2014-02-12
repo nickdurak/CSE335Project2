@@ -15,7 +15,7 @@ class AbstractSort
 public:
     AbstractSort() {}
     virtual void sort(AbstractDatabase*) = 0;
-    virtual ~AbstractSort() = 0;
+    virtual ~AbstractSort();
 
 };
 

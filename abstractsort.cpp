@@ -10,6 +10,11 @@
 
 using namespace std;
 
+AbstractSort::~AbstractSort()
+{
+    delete this;
+}
+
 void BubbleSort::sort(AbstractDatabase* database)
 {
     for(int i = database->getSize()-1; i > 0; --i)

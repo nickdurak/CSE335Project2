@@ -26,7 +26,7 @@ public:
     virtual void print() = 0;
     virtual int getSize() = 0;
     AbstractDatabase() {}
-    virtual ~AbstractDatabase() = 0;
+    virtual ~AbstractDatabase();
     
 };
 
