@@ -100,6 +100,16 @@ void StudentDatabase::print()
     }
 }
 
+StudentDatabase::~StudentDatabase()
+{
+    for(unsigned int i = 0; i < students.size(); i++)
+    {
+         students.pop_back;	
+    }
+}
+
+
+
 
 void EmployeeDatabase::buildDatabase(string file)
 {
@@ -175,7 +185,16 @@ void EmployeeDatabase::sort(AbstractSort *sortType)
 
 void EmployeeDatabase::print()
 {
-    for(unsigned int i = 0; i < employees.size(); i++){
-            employees[i]->print();	
+    for(unsigned int i = 0; i < employees.size(); i++)
+    {
+         employees[i]->print();	
+    }
+}
+
+EmployeeDatabase::~EmployeeDatabase()
+{
+    for(unsigned int i = 0; i < employees.size(); i++)
+    {
+         employees.pop_back;	
     }
 }

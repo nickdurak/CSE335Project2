@@ -10,7 +10,8 @@
 
 class AbstractDatabase;
 
-class AbstractSort {
+class AbstractSort 
+{
 public:
     virtual void sort(AbstractDatabase*) = 0;
     AbstractSort();
