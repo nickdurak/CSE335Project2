@@ -44,7 +44,7 @@ public:
     virtual ~StudentDatabase();
     
 private:
-    vector<Student*> students;
+    std::vector<Student*> students;
 };
 
 class EmployeeDatabase : public AbstractDatabase
@@ -61,7 +61,7 @@ public:
     virtual ~EmployeeDatabase();
     
 private:
-    vector<Employee*> employees;
+    std::vector<Employee*> employees;
 };
 
 #endif	/* ABSTRACTDATABASE_H */

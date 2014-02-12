@@ -106,7 +106,7 @@ StudentDatabase::~StudentDatabase()
     
     for(unsigned int i = 0; i < size; i++)
     {
-         students.pop_back;	
+         students.pop_back();	
     }
 }
 
@@ -199,6 +199,6 @@ EmployeeDatabase::~EmployeeDatabase()
     
     for(unsigned int i = 0; i < size; i++)
     {
-         employees.pop_back;	
+         employees.pop_back();	
     }
 }

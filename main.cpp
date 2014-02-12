@@ -23,15 +23,15 @@ using namespace std;
  */
 int main(int argc, char** argv) 
 {
-    StudentDatabase students = new StudentDatabase();
-    students.buildDatabase("input1");  //store the list of students from input 1 in the students StudentDatabase
+    StudentDatabase* students = new StudentDatabase();
+    students->buildDatabase("input1");  //store the list of students from input 1 in the students StudentDatabase
 
-    BubbleSort BS = new BubbleSort();
+    BubbleSort* BS = new BubbleSort();
     
-    students.print();
+    students->print();
 
-    students.sort(BS); //sorts the database of students using bubblesort
+    students->sort(BS); //sorts the database of students using bubblesort
     
-    students.print();
+    students->print();
 }
 
