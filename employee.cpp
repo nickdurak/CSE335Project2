@@ -19,7 +19,6 @@
 
 using namespace std;
 
-
 /**
  constructor for Employee
  */
@@ -34,17 +33,17 @@ Employee::Employee(unsigned int id, string name, unsigned int salary, unsigned i
 /**
  print data stored in Employee
  */
-void Employee::print()
+void Employee::print() const
 {
     cout << m_id << " " << m_name << " " << m_salary << " " << m_year;
 }
 
-int Employee::getSalary()
+int Employee::getSalary() const
 {
     return m_salary;
 }
 
-int Employee::getYear()
+int Employee::getYear() const
 {
     return m_year;
 }
@@ -63,7 +62,7 @@ Faculty::Faculty(unsigned int id, string name, unsigned int salary, unsigned int
 /**
  print data stored in Faculty
  */
-void Faculty::print()
+void Faculty::print() const
 {
     Employee::print();
     cout << " " << m_numStudents << endl;
@@ -82,7 +81,7 @@ Staff::Staff(unsigned int id, string name, unsigned int salary, unsigned int yea
 /**
  print data stored in Staff
  */
-void Staff::print()
+void Staff::print() const
 {
     Employee::print();
     cout << " " << m_dep << endl;

@@ -18,6 +18,7 @@
 
 #include "student.h"
 
+using namespace std;
 
 /**
     constructor for student
@@ -35,17 +36,17 @@ Student::Student(unsigned int id, string name, unsigned int year, float grade)
 /**
     print data stored in student
  */
-void Student::print()
+void Student::print() const
 {
-    cout << std::setprecision(3) << m_id << " " << m_name << " " << m_year << " " << m_grade;
+    cout << m_id << " " << m_name << " " << m_year << " " << m_grade;
 }
 
-int Student::getGrade()
+int Student::getGrade() const
 {
     return m_grade;
 }
 
-string Student::getName()
+string Student::getName() const
 {
     return m_name;
 }
@@ -64,7 +65,7 @@ UndergradStudent::UndergradStudent(unsigned int id, string name, unsigned int ye
 /**
     print data stored in UndergradStudent
  */
-void UndergradStudent::print()
+void UndergradStudent::print() const
 {
     Student::print();
     cout << " " << m_major << " " << m_minor << endl;
@@ -84,7 +85,7 @@ GraduateStudent::GraduateStudent(unsigned int id, string name, unsigned int year
 /**
     print data stored in GraduateStudent
  */
-void GraduateStudent::print()
+void GraduateStudent::print() const
 {
     Student::print();
     cout << " " << m_dep << " " << m_advisor << endl;

@@ -10,18 +10,16 @@
 
 #include <string>
 #include <vector>
-#include "student.h"
-#include "employee.h"
-#include "abstractsort.h"
 
-using namespace std;
-
+class Student;
+class Employee;
+class AbstractSort;
 
 class AbstractDatabase
 {
     
 public:
-    virtual void buildDatabase(string) = 0;
+    virtual void buildDatabase(std::string) = 0;
     virtual void swap(int,int) = 0;
     virtual bool compare(int,int) = 0;
     virtual void sort(AbstractSort*) = 0;
@@ -37,7 +35,7 @@ class StudentDatabase : public AbstractDatabase
     
 public:
     virtual int getSize();
-    virtual void buildDatabase(string);
+    virtual void buildDatabase(std::string);
     virtual void swap(int,int);
     virtual bool compare(int,int);
     virtual void sort(AbstractSort*);
@@ -54,7 +52,7 @@ class EmployeeDatabase : public AbstractDatabase
     
 public:
     virtual int getSize();
-    virtual void buildDatabase(string);
+    virtual void buildDatabase(std::string);
     virtual void swap(int,int);
     virtual bool compare(int,int);
     virtual void sort(AbstractSort*);

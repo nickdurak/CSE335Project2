@@ -8,9 +8,7 @@
 #ifndef ABSTRACTSORT_H
 #define	ABSTRACTSORT_H
 
-#include "abstractdatabase.h"
-
-using namespace std;
+class AbstractDatabase;
 
 class AbstractSort {
 public:

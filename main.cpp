@@ -10,10 +10,11 @@
 #include<string>
 #include<fstream>
 #include<vector>
-using namespace std;
 
 #include "student.h"
 #include "employee.h"
+
+using namespace std;
 
 /*
  * 
